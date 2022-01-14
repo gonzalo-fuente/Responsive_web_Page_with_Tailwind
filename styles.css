@@ -855,6 +855,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:justify-end{
     justify-content: flex-end;
   }
+
+  .md\:border-2{
+    border-width: 2px;
+  }
 }
 
 @media (min-width: 1024px){
