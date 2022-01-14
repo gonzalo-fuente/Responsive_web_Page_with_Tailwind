@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page with Tailwind</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-600 font-body">
+
+  <div class="grid md:grid-cols-3">
+    <div class="md:col-span-1 md:flex md:justify-end">
+      <nav class="text-right">
+        <div class="flex justify-between items-center">
+          <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+            <a href="/" class="hover:text-gray-700 tracking-widest">Awesome Photos!</a>
+          </h1>
+          <div class="px-4 cursor-pointer md:hidden" id="burger">
+            <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </div>
+        </div>
+        <ul class="text-lg mt-6 hidden md:block" id="menu">
+          <li class="text-gray-700 font-bold py-1">
+            <a href="#" class="block px-4 flex justify-end border-r-4 border-primary">
+              <span>Home</span>
+              <i class="fas fa-home text-lg pt-1 ml-2"></i>
+            </a>
+          </li>
+          <li class="py-1">
+            <a href="#" class="block px-4 flex justify-end border-r-4 border-white">
+              <span>About</span>
+              <i class="fas fa-info-circle text-lg pt-1 ml-2"></i>
+            </a>
+          </li>
+          <li class="py-1">
+            <a href="#" class="block px-4 flex justify-end border-r-4 border-white">
+              <span>Contact</span>
+              <i class="fas fa-mail-bulk text-lg pt-1 ml-2"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <main class="px-16 py-6 md:col-span-2 bg-gray-100">
+      <div class="flex justify-center md:justify-end">
+        <a href="#" class="btn text-primary border-primary border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
+        <a href="#" class="btn text-primary ml-2 border-primary border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</a>
+      </div>
+
+      <header class="mt-4">
+        <h2 class="text-gray-700 text-6xl font-semibold leading-none tracking-wider">Random Awesome Photos</h2>
+        <h3 class="text-2xl font-semibold tracking-wider">Just for you...</h3>
+      </header>
+
+      <div>
+        <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Latest Photos</h4>
+  
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+          <!-- cards go here -->
+          <div class="card hover:shadow-lg"> 
+            <img src="https://source.unsplash.com/random" alt="random image" class="h-32 sm:h-48 w-full object-cover">
+            <div class="m-4">
+              <span class="font-bold">Lorem ipsum dolor sit amet.</span>
+              <span class="block text-gray-500 text-sm">Taked by Jhon</span>
+            </div>
+            <div class="badge">
+              <i class="fas fa-camera"></i>
+              <span>20 mins ago</span>
+            </div>
+          </div>
+          <div class="card hover:shadow-lg"> 
+            <img src="https://source.unsplash.com/random" alt="random image" class="h-32 sm:h-48 w-full object-cover">
+            <div class="m-4">
+              <span class="font-bold">Lorem ipsum dolor sit amet.</span>
+              <span class="block text-gray-500 text-sm">Taked by Jhon</span>
+            </div>
+            <div class="badge">
+              <i class="fas fa-camera"></i>
+              <span>25 mins ago</span>
+            </div>
+          </div>
+          <div class="card hover:shadow-lg"> 
+            <img src="https://source.unsplash.com/random" alt="random image" class="h-32 sm:h-48 w-full object-cover">
+            <div class="m-4">
+              <span class="font-bold">Lorem ipsum dolor sit amet.</span>
+              <span class="block text-gray-500 text-sm">Taked by Jhon</span>
+            </div>
+            <div class="badge">
+              <i class="fas fa-camera"></i>
+              <span>45 mins ago</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Most Popular</h4>
+
+        <div class="mt-8 grid lg:grid-cols-3 gap-10">
+          <!-- cards go here -->
+          <div class="card hover:shadow-lg"> 
+            <img src="https://source.unsplash.com/random" alt="random image" class="h-32 sm:h-48 w-full object-cover">
+            <div class="m-4">
+              <span class="font-bold truncate block">Lorem ipsum dolor sit amet.</span>
+              <span class="block text-gray-500 text-sm">Taked by Jhon</span>
+            </div>
+            <div class="badge">
+              <i class="fas fa-camera"></i>
+              <span>120 mins ago</span>
+            </div>
+          </div>
+          <div class="card hover:shadow-lg"> 
+            <img src="https://source.unsplash.com/random" alt="random image" class="h-32 sm:h-48 w-full object-cover">
+            <div class="m-4">
+              <span class="font-bold">Lorem ipsum dolor sit amet.</span>
+              <span class="block text-gray-500 text-sm">Taked by Jhon</span>
+            </div>
+            <div class="badge">
+              <i class="fas fa-camera"></i>
+              <span>360 mins ago</span>
+            </div>
+          </div>
+          <div class="card hover:shadow-lg"> 
+            <img src="https://source.unsplash.com/random" alt="random image" class="h-32 sm:h-48 w-full object-cover">
+            <div class="m-4">
+              <span class="font-bold">Lorem ipsum dolor sit amet.</span>
+              <span class="block text-gray-500 text-sm">Taked by Jhon</span>
+            </div>
+            <div class="badge">
+              <i class="fas fa-camera"></i>
+              <span>60 mins ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 flex justify-center">
+        <div class="btn bg-secondary-100 text-secondary-200 inline-block hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Load more</div>
+      </div>    
+    </main>
+  </div>
+
+  <script src="https://kit.fontawesome.com/e5da43bfe7.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
